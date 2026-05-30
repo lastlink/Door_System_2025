@@ -16,6 +16,12 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - main
+      - develop
+    paths:
+      - 'netcore/**'
+      - '.github/workflows/deploynetcore.yml'
 
 permissions:
   contents: write   # required to create a GitHub Release
